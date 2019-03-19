@@ -52,7 +52,7 @@ function buildCharts(sample) {
      marker:{
        color: response.otu_ids,
        size: response.sample_values,
-       colorscale: "Blackbody"
+       colorscale: 'Blackbody'
      }
    }
 
