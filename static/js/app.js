@@ -52,6 +52,7 @@ function buildCharts(sample) {
      marker:{
        color: response.otu_ids,
        size: response.sample_values,
+       colorscale: "Blackbody"
      }
    }
 
@@ -60,7 +61,7 @@ function buildCharts(sample) {
      title: 'Marker Size',
      showlegend: false,
      height: 600,
-     width: 1500,
+     width: 600,
    };
 
    Plotly.newPlot('bubble', bubbletrace1, layout);
